@@ -22,6 +22,7 @@
                             <form class="mt-5 mb-5 " action="login" method="post">
                                 {% csrf_token %}
                                 {{ form | crispy }}
+                                <h6 style="color: red;">{{password_error}}</h6><br><br>
                                 <button type="submit" class="btn mb-1 btn-primary">Login</button>
                             </form>
                             <h6>New to Cronjob? <a href="register">register</a>  <a href="register">here</a></h6>

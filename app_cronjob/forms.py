@@ -1,6 +1,5 @@
 from django import forms
 from .models import login_model, url_model
-import datetime; rightNow = datetime.datetime.now()
 
 class registeration_form(forms.ModelForm):
     class Meta:
@@ -30,14 +29,6 @@ class login_form(forms.ModelForm):
             return _user_email
         else:
             raise forms.ValidationError("Incorrect email")
-
-    def clean_user_password(self, *args, **kwargs):
-        _user_password = self.cleaned_data.get("user_password")
-        checker = login_model.objects.filter(user_password=_user_password)
-        if checker:
-            return _user_password
-        else:
-            raise forms.ValidationError("Incorrect Password")
 
 class url_form(forms.ModelForm):
     class Meta:

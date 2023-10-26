@@ -2,7 +2,11 @@ from django.shortcuts import render, redirect
 from . import forms; from .models import *
 import requests
 
-
+def converter(data):
+    convertedObject = vars(data)
+    converted_data = dict(convertedObject)
+    cleaned_data = converted_data["cleaned_data"]
+    return cleaned_data
 # Create your views here.
 
 
@@ -49,8 +53,12 @@ def login(request):
     if request.method == "POST":
         user_login = forms.login_form(request.POST)
         if user_login.is_valid():
-            request.session["currentUser"] = user_login.cleaned_data["user_email"]
-            return redirect("profile")
+            converted_form = converter(user_login);_email = converted_form['user_email']; _password = converted_form['user_password']
+            if login_model.objects.filter(user_email=_email, user_password=_password).exists():
+                request.session["currentUser"] = user_login.cleaned_data["user_email"]
+                return redirect("profile")
+            else:
+                return render(request, 'login.html', {"form": user_login, "password_error":"Incorrect password"})
         else:
             return render(request, 'login.html', {"form": user_login})
     else:
