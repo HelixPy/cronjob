@@ -38,8 +38,7 @@ Ensure you have a virtual environment activated and you are running on Python 3 
     ```sh
     pip install -r requirement.txt
     ```
-3. Migrations
-    Navigate to project folder, and run;
+3. Migrations: Navigate to project folder, and run;
     ```sh
     python manage.py makemigrations
     ```
@@ -47,13 +46,12 @@ Ensure you have a virtual environment activated and you are running on Python 3 
     ```sh
     python manage.py migrate
     ```
-4. Create superuser
-    While in project folder;
+4. Create superuser: While in project folder, run;
     ```sh
     python manage.py createsuperuser
     ```
     follow the prompt and enter a username, email and password.
-    On completion, run; 
+    On completion, run;
     ```sh
     python manage.py runserver
     ```
