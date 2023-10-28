@@ -1,0 +1,4 @@
+Django
+Jinja2
+pytz
+requests
