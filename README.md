@@ -1,12 +1,76 @@
-# cronjob
-This is a manual cronjob app that enables you check the status of any server and log the response. 
-Operation starts from creating a user profile then login. 
-Once logged in, your rescent url checks will be displayed on your dashboard.
-Users can enter their desired url and click check url to make a call to the submitted url.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-#usage:
-clone repo, create env, install django.
-cd to the project folder, make migrations and migrate the db.
-Create superuser, run> python manage.py runserver,
-login page will be display, navigate to create account then login.
+# Project Name
 
+> One paragraph statement about the project.
+
+![screenshot](./app_screenshot.png)
+
+Additional description about the project and its features.
+
+## Built With
+
+- Major languages
+- Frameworks
+- Technologies used
+
+## Live Demo
+
+[Live Demo Link](https://livedemo.com)
+
+
+## Getting Started
+
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+### Setup
+
+### Install
+
+### Usage
+
+### Run tests
+
+### Deployment
+
+
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
